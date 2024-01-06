@@ -1,0 +1,59 @@
+.homelist-wrapper {
+    @apply bg-slate-600 p-8 w-fit mt-8 mx-auto rounded-lg;
+}
+
+.title {
+    @apply text-3xl font-bold text-center mb-4;
+}
+
+.new-task {
+    @apply relative flex items-center rounded-lg overflow-hidden;
+}
+
+.new-task input {
+    @apply w-64 p-2 rounded-lg bg-gray-800;
+}
+
+.new-task button {
+    @apply absolute right-0 bg-green-900 text-lg font-black h-full p-2;
+}
+
+.filters {
+    @apply flex justify-end gap-2 my-2;
+}
+
+.filters button {
+    @apply px-2 rounded-lg bg-zinc-600;
+}
+
+.filters button.active {
+    @apply bg-zinc-400;
+}
+
+.task-list {
+    @apply flex flex-col gap-2;
+}
+
+.task-list li {
+    @apply flex bg-slate-400 px-4 py-2 rounded-lg items-center gap-2;
+}
+
+.task-list li.task label {
+    @apply flex-1;
+}
+
+.task-list li.task:hover button {
+    @apply block;
+}
+
+.task-list li.task button {
+    @apply hidden text-xs;
+}
+
+.task-list li.task input[type="checkbox"] {
+    @apply w-4 h-4 cursor-pointer;
+}
+
+.task-list li.task-editing input[type="text"] {
+    @apply w-full bg-slate-300 rounded-lg px-2 outline-none;
+}
